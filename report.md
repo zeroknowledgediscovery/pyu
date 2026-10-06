@@ -104,7 +104,7 @@ This generated the sequence:
 | 2 | 1,124 | -1.7177 | 0.1285 |
 | 3 | 376 | -1.9488 | 0.1460 |
 
-The four fitted models are stored as archives under `models/lsm_depth_00.tar.gz` through `lsm_depth_03.tar.gz`.
+The four fitted runtime models are stored under `models/lsm_depth_00/` through `models/lsm_depth_03/`, including the binary trees and source maps required for inference.
 
 ### 5.3 Target conditionals
 
