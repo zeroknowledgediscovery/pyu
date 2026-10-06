@@ -1,0 +1,8 @@
+# No source patient data in this repository
+data/*.csv
+data/*.xlsx
+data/*.tgz
+data/*.zip
+__pycache__/
+*.pyc
+.DS_Store
