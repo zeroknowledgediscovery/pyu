@@ -1,0 +1,30 @@
+[
+  {
+    "depth": 0,
+    "n": 11297,
+    "median_persistence": -1.2799017522859213,
+    "mad_scale": 0.20984818015432655,
+    "next_n": 3521
+  },
+  {
+    "depth": 1,
+    "n": 3521,
+    "median_persistence": -1.523186920750789,
+    "mad_scale": 0.1344901900306327,
+    "next_n": 1124
+  },
+  {
+    "depth": 2,
+    "n": 1124,
+    "median_persistence": -1.717662454817846,
+    "mad_scale": 0.12847240377700156,
+    "next_n": 376
+  },
+  {
+    "depth": 3,
+    "n": 376,
+    "median_persistence": -1.9487849029451312,
+    "mad_scale": 0.14596264578690982,
+    "next_n": 112
+  }
+]

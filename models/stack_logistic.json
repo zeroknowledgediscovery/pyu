@@ -1,0 +1,22 @@
+{
+  "model": "logistic stack",
+  "input_features": [
+    "lgbm",
+    "p0",
+    "p1",
+    "p2",
+    "p3"
+  ],
+  "regularization_C": 1.0,
+  "coefficients_standardized_inputs": [
+    0.6243464196332967,
+    0.20484429595276632,
+    0.09954675774328083,
+    0.0616515480161224,
+    0.03054204862407119
+  ],
+  "intercept": -0.7445557496648205,
+  "oof_auc": 0.7296688535606142,
+  "test_auc": 0.7303631161471819,
+  "note": "Coefficients correspond to the final patient-grouped OOF stack used in the safe analysis."
+}

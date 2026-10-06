@@ -1,0 +1,118 @@
+{
+  "seed": 20261006,
+  "split_unit": "Anon_MRN",
+  "train_rows": 11297,
+  "test_rows": 7417,
+  "safe_feature_count": 110,
+  "lsm_feature_count": 60,
+  "lsm_alpha": 0.1,
+  "lsm_depth_sizes": [
+    11297,
+    3521,
+    1124,
+    376
+  ],
+  "lightgbm_auc": 0.7282822648750066,
+  "multiscale_stack_auc": 0.7303631161471819,
+  "timing_policy": {
+    "included": "demographics, pre-UA vitals, precisely timestamped labs, medication administrations, imaging, procedure histories with date safety shift, prior urine/pyuria history",
+    "excluded_from_final_safe_model": "diagnosis, problem-list, outpatient-Rx, and encounter-history channels because their timestamps can encode current-encounter/downstream information without reliable pre-UA event time"
+  },
+  "stack_results": [
+    {
+      "variant": "lgbm",
+      "features": [
+        "lgbm"
+      ],
+      "oof_auc": 0.7237609786256759,
+      "test_auc": 0.7282822648750066,
+      "C": 0.001,
+      "coef": [
+        0.5832666803480265
+      ],
+      "intercept": [
+        -0.6734304145082836
+      ]
+    },
+    {
+      "variant": "lgbm_p0",
+      "features": [
+        "lgbm",
+        "p0"
+      ],
+      "oof_auc": 0.7282562312618803,
+      "test_auc": 0.7298322230659763,
+      "C": 0.03162277660168379,
+      "coef": [
+        0.6555036316287807,
+        0.3012731982038776
+      ],
+      "intercept": [
+        -0.7445926517284299
+      ]
+    },
+    {
+      "variant": "lgbm_p01",
+      "features": [
+        "lgbm",
+        "p0",
+        "p1"
+      ],
+      "oof_auc": 0.7287063632746333,
+      "test_auc": 0.7300447083016125,
+      "C": 1.0,
+      "coef": [
+        0.6362304981299441,
+        0.2017882649037169,
+        0.13919693584014725
+      ],
+      "intercept": [
+        -0.7464826985006697
+      ]
+    },
+    {
+      "variant": "lgbm_multiscale",
+      "features": [
+        "lgbm",
+        "p0",
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "oof_auc": 0.7296688535606142,
+      "test_auc": 0.7303631161471819,
+      "C": 1.0,
+      "coef": [
+        0.6243464196332967,
+        0.20484429595276632,
+        0.09954675774328083,
+        0.0616515480161224,
+        0.03054204862407119
+      ],
+      "intercept": [
+        -0.7445557496648205
+      ]
+    },
+    {
+      "variant": "lsm_multiscale",
+      "features": [
+        "p0",
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "oof_auc": 0.7053894078011252,
+      "test_auc": 0.7023287853812719,
+      "C": 0.001,
+      "coef": [
+        0.3197670994896215,
+        0.26379918039672096,
+        0.10972062676567551,
+        0.05795198831196884
+      ],
+      "intercept": [
+        -0.6827271371416771
+      ]
+    }
+  ]
+}

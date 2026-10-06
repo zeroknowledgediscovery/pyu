@@ -1,0 +1,1386 @@
+{
+  "features": [
+    "AGE",
+    "WT_KG",
+    "GENDER",
+    "admission_to_ua_hours",
+    "preUA_MAX_PULSE",
+    "prior_pyuria_rate",
+    "lab_neutrophil_abs",
+    "prior_ua_wbc_last",
+    "lab_cbc_wbc",
+    "BMI",
+    "preUA_lab_count",
+    "preUA_MAX_TEMP_C",
+    "preUA_MAX_SBP",
+    "preUA_MAX_RESP",
+    "preUA_MIN_TEMP_C",
+    "preUA_MAX_DBP",
+    "lab_Platelet_Count",
+    "lab_Creatinine_Plasma",
+    "lab_creatinine",
+    "lab_Albumin_Plasma",
+    "HT_M",
+    "lab_Glucose_Plasma",
+    "preUA_MIN_RESP",
+    "lab_MCH",
+    "preUA_MIN_SBP",
+    "preUA_MIN_PULSE",
+    "lab_platelet",
+    "lab_RBC_Count",
+    "preUA_MIN_DBP",
+    "lab_BUN_Creatinine_Ratio",
+    "lab_RDW",
+    "lab_BUN_Plasma",
+    "lab_Total_Calcium_Plasma",
+    "lab_HGB",
+    "ZIP3",
+    "lab_MCHC",
+    "prior_ua_rec_days",
+    "lab_HCT",
+    "lab_Anion_Gap",
+    "labrec_Albumin_Plasma",
+    "medadmin_life",
+    "UA_year",
+    "lab_MCV",
+    "lab_procalcitonin",
+    "procedure_life",
+    "lab_hemoglobin",
+    "medadmin_365d",
+    "labrec_Sodium_Plasma",
+    "lab_Sodium_Plasma",
+    "medadmin_1d",
+    "lab_Potassium_Plasma",
+    "lab_Chloride_Plasma",
+    "lab_Phosphorus_Plasma",
+    "procedure_365d",
+    "labrec_HCT",
+    "lab_CO2_Plasma",
+    "INS_TYPE",
+    "RACE1",
+    "labrec_Phosphorus_Plasma",
+    "labrec_Creatinine_Plasma"
+  ],
+  "n_features": 60,
+  "binning": {
+    "AGE": {
+      "type": "quantile",
+      "edges": [
+        null,
+        1.0,
+        4.0,
+        7.0,
+        11.0,
+        15.0,
+        17.0,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7"
+      ]
+    },
+    "WT_KG": {
+      "type": "quantile",
+      "edges": [
+        null,
+        6.0,
+        10.0,
+        15.0,
+        23.0,
+        38.0,
+        55.0,
+        72.0,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "GENDER": {
+      "type": "categorical",
+      "keep": [
+        "FEMALE",
+        "MALE"
+      ]
+    },
+    "admission_to_ua_hours": {
+      "type": "quantile",
+      "edges": [
+        null,
+        0.533,
+        0.867,
+        1.19,
+        1.533,
+        2.05,
+        2.833,
+        4.95,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "preUA_MAX_PULSE": {
+      "type": "quantile",
+      "edges": [
+        null,
+        88.0,
+        100.0,
+        111.0,
+        124.0,
+        139.0,
+        157.0,
+        176.25,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "prior_pyuria_rate": {
+      "type": "quantile",
+      "edges": [
+        null,
+        0.3333333333333333,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2"
+      ]
+    },
+    "lab_neutrophil_abs": {
+      "type": "quantile",
+      "edges": [
+        null,
+        2.20625,
+        3.11,
+        4.04,
+        5.105,
+        6.46125,
+        8.52,
+        12.03375,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "prior_ua_wbc_last": {
+      "type": "discrete",
+      "states": 8
+    },
+    "lab_cbc_wbc": {
+      "type": "quantile",
+      "edges": [
+        null,
+        5.77,
+        7.092499999999999,
+        8.358749999999999,
+        9.65,
+        11.17,
+        13.28,
+        16.95375,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "BMI": {
+      "type": "quantile",
+      "edges": [
+        null,
+        13.91,
+        15.54,
+        17.12,
+        19.03,
+        21.45,
+        24.65,
+        30.42,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "preUA_lab_count": {
+      "type": "quantile",
+      "edges": [
+        null,
+        17.0,
+        18.0,
+        20.0,
+        38.0,
+        60.0,
+        65.0,
+        78.0,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "preUA_MAX_TEMP_C": {
+      "type": "quantile",
+      "edges": [
+        null,
+        36.7,
+        36.8,
+        37.1,
+        37.3,
+        37.8,
+        38.4,
+        39.3,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "preUA_MAX_SBP": {
+      "type": "quantile",
+      "edges": [
+        null,
+        99.0,
+        106.0,
+        111.0,
+        116.0,
+        121.0,
+        127.0,
+        136.0,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "preUA_MAX_RESP": {
+      "type": "quantile",
+      "edges": [
+        null,
+        18.0,
+        20.0,
+        22.0,
+        24.0,
+        26.0,
+        32.0,
+        40.0,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "preUA_MIN_TEMP_C": {
+      "type": "quantile",
+      "edges": [
+        null,
+        36.4,
+        36.6,
+        36.7,
+        36.8,
+        36.9,
+        37.1,
+        37.4,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "preUA_MAX_DBP": {
+      "type": "quantile",
+      "edges": [
+        null,
+        60.0,
+        65.0,
+        69.0,
+        73.0,
+        77.0,
+        81.0,
+        87.0,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "lab_Platelet_Count": {
+      "type": "quantile",
+      "edges": [
+        null,
+        196.0,
+        238.0,
+        269.0,
+        298.5,
+        330.0,
+        372.0,
+        438.0,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "lab_Creatinine_Plasma": {
+      "type": "quantile",
+      "edges": [
+        null,
+        0.24,
+        0.3125,
+        0.41,
+        0.51,
+        0.6,
+        0.69,
+        0.81,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "lab_creatinine": {
+      "type": "quantile",
+      "edges": [
+        null,
+        0.25,
+        0.32,
+        0.42,
+        0.52,
+        0.62,
+        0.72,
+        0.88,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "lab_Albumin_Plasma": {
+      "type": "quantile",
+      "edges": [
+        null,
+        3.6,
+        3.9,
+        4.1,
+        4.3,
+        4.4,
+        4.5,
+        4.7,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "HT_M": {
+      "type": "quantile",
+      "edges": [
+        null,
+        0.535001,
+        0.736601,
+        1.11999,
+        1.38001,
+        1.549403,
+        1.61674525,
+        1.676403,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "lab_Glucose_Plasma": {
+      "type": "quantile",
+      "edges": [
+        null,
+        80.0,
+        86.0,
+        91.0,
+        95.0,
+        101.0,
+        109.0,
+        124.0,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "preUA_MIN_RESP": {
+      "type": "quantile",
+      "edges": [
+        null,
+        16.0,
+        18.0,
+        20.0,
+        22.0,
+        25.0,
+        30.0,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7"
+      ]
+    },
+    "lab_MCH": {
+      "type": "quantile",
+      "edges": [
+        null,
+        25.6,
+        26.8,
+        27.6,
+        28.4,
+        29.2,
+        30.0,
+        31.8,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "preUA_MIN_SBP": {
+      "type": "quantile",
+      "edges": [
+        null,
+        88.0,
+        96.0,
+        101.0,
+        106.0,
+        111.0,
+        116.0,
+        124.0,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "preUA_MIN_PULSE": {
+      "type": "quantile",
+      "edges": [
+        null,
+        73.25,
+        85.0,
+        94.0,
+        104.0,
+        115.0,
+        130.0,
+        149.0,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "lab_platelet": {
+      "type": "quantile",
+      "edges": [
+        null,
+        200.0,
+        240.0,
+        271.0,
+        300.0,
+        332.0,
+        373.0,
+        440.0,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "lab_RBC_Count": {
+      "type": "quantile",
+      "edges": [
+        null,
+        3.49,
+        4.0,
+        4.24,
+        4.42,
+        4.59,
+        4.78,
+        5.02,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "preUA_MIN_DBP": {
+      "type": "quantile",
+      "edges": [
+        null,
+        53.0,
+        59.0,
+        64.0,
+        67.0,
+        71.0,
+        75.0,
+        80.0,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "lab_BUN_Creatinine_Ratio": {
+      "type": "quantile",
+      "edges": [
+        null,
+        12.0,
+        14.0,
+        18.0,
+        21.0,
+        26.0,
+        35.0,
+        48.0,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "lab_RDW": {
+      "type": "quantile",
+      "edges": [
+        null,
+        12.1,
+        12.4,
+        12.8,
+        13.2,
+        13.7,
+        14.5,
+        15.9,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "lab_BUN_Plasma": {
+      "type": "quantile",
+      "edges": [
+        null,
+        7.0,
+        8.0,
+        9.0,
+        11.0,
+        12.0,
+        14.0,
+        17.0,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "lab_Total_Calcium_Plasma": {
+      "type": "quantile",
+      "edges": [
+        null,
+        8.8,
+        9.1,
+        9.3,
+        9.5,
+        9.7,
+        9.9,
+        10.2,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "lab_HGB": {
+      "type": "quantile",
+      "edges": [
+        null,
+        10.0,
+        11.2,
+        11.8,
+        12.4,
+        12.9,
+        13.5,
+        14.3,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "ZIP3": {
+      "type": "quantile",
+      "edges": [
+        null,
+        403.0,
+        405.0,
+        410.0,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ]
+    },
+    "lab_MCHC": {
+      "type": "quantile",
+      "edges": [
+        null,
+        32.0,
+        32.7,
+        33.2,
+        33.6,
+        34.0,
+        34.4,
+        35.0,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "prior_ua_rec_days": {
+      "type": "quantile",
+      "edges": [
+        null,
+        11.841319444444444,
+        27.999305555555555,
+        57.01423611111111,
+        98.78541666666666,
+        166.33958333333334,
+        284.02708333333334,
+        470.6378472222222,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "lab_HCT": {
+      "type": "quantile",
+      "edges": [
+        null,
+        30.4,
+        33.5,
+        35.4,
+        37.0,
+        38.5,
+        40.1,
+        42.4,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "lab_Anion_Gap": {
+      "type": "quantile",
+      "edges": [
+        null,
+        10.0,
+        11.0,
+        12.0,
+        13.0,
+        14.0,
+        15.0,
+        17.0,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "labrec_Albumin_Plasma": {
+      "type": "quantile",
+      "edges": [
+        null,
+        0.1333333333333333,
+        0.5666666666666667,
+        1.2333333333333334,
+        2.066666666666667,
+        4.216666666666667,
+        22.54583333333333,
+        1927.3395833333334,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "medadmin_life": {
+      "type": "quantile",
+      "edges": [
+        null,
+        1.0,
+        2.0,
+        3.0,
+        6.0,
+        29.0,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6"
+      ]
+    },
+    "UA_year": {
+      "type": "discrete",
+      "states": 5
+    },
+    "lab_MCV": {
+      "type": "quantile",
+      "edges": [
+        null,
+        78.0,
+        81.0,
+        83.0,
+        85.0,
+        87.0,
+        89.0,
+        93.0,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "lab_procalcitonin": {
+      "type": "quantile",
+      "edges": [
+        null,
+        0.09,
+        0.11,
+        0.14,
+        0.19,
+        0.28125,
+        0.5874999999999999,
+        2.09125,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "procedure_life": {
+      "type": "quantile",
+      "edges": [
+        null,
+        3.0,
+        14.0,
+        46.0,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ]
+    },
+    "lab_hemoglobin": {
+      "type": "quantile",
+      "edges": [
+        null,
+        5.1,
+        6.3,
+        9.5,
+        10.9,
+        12.2,
+        13.9,
+        26.4625,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "medadmin_365d": {
+      "type": "quantile",
+      "edges": [
+        null,
+        1.0,
+        2.0,
+        3.0,
+        5.0,
+        19.0,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6"
+      ]
+    },
+    "labrec_Sodium_Plasma": {
+      "type": "quantile",
+      "edges": [
+        null,
+        0.1333333333333333,
+        0.5333333333333333,
+        1.2,
+        1.9749999999999996,
+        3.8333333333333335,
+        18.700000000000003,
+        1773.2854166666666,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "lab_Sodium_Plasma": {
+      "type": "quantile",
+      "edges": [
+        null,
+        135.0,
+        137.0,
+        138.0,
+        139.0,
+        140.0,
+        141.0,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7"
+      ]
+    },
+    "medadmin_1d": {
+      "type": "quantile",
+      "edges": [
+        null,
+        1.0,
+        2.0,
+        3.0,
+        5.0,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5"
+      ]
+    },
+    "lab_Potassium_Plasma": {
+      "type": "quantile",
+      "edges": [
+        null,
+        3.6,
+        3.8,
+        3.9,
+        4.1,
+        4.3,
+        4.5,
+        4.9,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "lab_Chloride_Plasma": {
+      "type": "quantile",
+      "edges": [
+        null,
+        100.0,
+        101.0,
+        103.0,
+        104.0,
+        105.0,
+        107.0,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7"
+      ]
+    },
+    "lab_Phosphorus_Plasma": {
+      "type": "quantile",
+      "edges": [
+        null,
+        3.2,
+        3.7,
+        4.0,
+        4.4,
+        4.7,
+        5.3,
+        6.1,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "procedure_365d": {
+      "type": "quantile",
+      "edges": [
+        null,
+        2.0,
+        10.0,
+        32.0,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ]
+    },
+    "labrec_HCT": {
+      "type": "quantile",
+      "edges": [
+        null,
+        0.1333333333333333,
+        0.55,
+        1.2,
+        2.0083333333333333,
+        3.9678125,
+        20.545833333333334,
+        1827.7229166666666,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "lab_CO2_Plasma": {
+      "type": "quantile",
+      "edges": [
+        null,
+        19.0,
+        20.0,
+        21.0,
+        22.0,
+        23.0,
+        24.0,
+        25.0,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "INS_TYPE": {
+      "type": "categorical",
+      "keep": [
+        "MEDICAID REPLACEMENT",
+        "BLUE CROSS BLUE SHIELD",
+        "SELF-PAY",
+        "COMMERCIAL",
+        "MEDICAID",
+        "TRICARE",
+        "MEDICARE",
+        "TPL",
+        "OTHER",
+        "MEDICARE ADVANTAGE",
+        "WORKER'S COMP"
+      ]
+    },
+    "RACE1": {
+      "type": "categorical",
+      "keep": [
+        "WHITE",
+        "BLACK OR AFRICAN AMERICAN",
+        "SPANISH AMERICAN",
+        "MULTI-RACIAL",
+        "OTHER ASIAN AMERICAN",
+        "OTHER",
+        "MIDDLE EASTERN",
+        "ASIAN INDIAN",
+        "DECLINE TO ANSWER",
+        "OTHER ASIAN",
+        "UNKNOWN",
+        "AMERICAN INDIAN OR ALASKA NATIVE",
+        "UNREPORTED",
+        "CHINESE AMERICAN",
+        "CHINESE",
+        "NATIVE HAWAIIAN",
+        "JAPANESE",
+        "OTHER PACIFIC ISLANDER",
+        "FILIPINO AMERICAN",
+        "FILIPINO",
+        "JAPANESE AMERICAN"
+      ]
+    },
+    "labrec_Phosphorus_Plasma": {
+      "type": "quantile",
+      "edges": [
+        null,
+        0.7333333333333333,
+        2.8,
+        10.691666666666666,
+        80.86666666666666,
+        681.7083333333333,
+        2975.15,
+        8768.091666666667,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    },
+    "labrec_Creatinine_Plasma": {
+      "type": "quantile",
+      "edges": [
+        null,
+        0.1333333333333333,
+        0.55,
+        1.2,
+        1.9833333333333327,
+        3.966666666666667,
+        19.641666666666666,
+        1786.7145833333334,
+        null
+      ],
+      "labels": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ]
+    }
+  }
+}

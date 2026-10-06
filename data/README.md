@@ -10,6 +10,8 @@ The final leakage-safe event-level modeling table used for the reported analysis
 
 `pyuria_longitudinal_safe.csv`
 
-The preserved patient-level split uses seed `20261006` and is defined by split artifacts retained in the same private Dropbox folder. Source extracts include encounter, diagnosis, problem-list, outpatient prescription, imaging, medication-administration, procedure, and laboratory files.
+The preserved patient-level split uses seed `20261006` and is defined by the split artifacts retained in the same private Dropbox folder. The original source extracts in that folder include encounter, diagnosis, problem-list, outpatient prescription, imaging, medication-administration, procedure, and laboratory files.
 
-This repository intentionally excludes row-level clinical data, identifiers, patient split manifests, and individual prediction files. Aggregate ROC, calibration, operating-characteristic, and feature-importance outputs are versioned under `results/`.
+## Data governance
+
+This repository intentionally excludes all row-level clinical data, identifiers, patient split manifests, and individual prediction files. Aggregate ROC, calibration, operating-characteristic, and feature-importance outputs are included under `results/`.
