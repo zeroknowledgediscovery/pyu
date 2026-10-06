@@ -33,10 +33,10 @@ pyu/
 ├── models/
 │   ├── lightgbm_final.txt
 │   ├── lightgbm_final_meta.json
-│   ├── lsm_depth_00.tar.gz
-│   ├── lsm_depth_01.tar.gz
-│   ├── lsm_depth_02.tar.gz
-│   ├── lsm_depth_03.tar.gz
+│   ├── lsm_depth_00/             # runtime binary trees + source maps
+│   ├── lsm_depth_01/
+│   ├── lsm_depth_02/
+│   ├── lsm_depth_03/
 │   ├── lsm_hierarchy.json
 │   ├── lsm_feature_metadata.json
 │   └── stack_logistic.json
