@@ -1,49 +1,14 @@
 {
+  "description": "Checksums for the fitted model artifacts committed to this repository. Directory digests hash each relative path and SHA256(file bytes) in sorted order.",
   "models": [
-    {
-      "file": "lightgbm_final.txt",
-      "bytes": 1733710,
-      "sha256": "e77f37958f3f2d58c795d21b0c50c65fade9d85577443c425b1c4fcb3db0a78f"
-    },
-    {
-      "file": "lightgbm_final_meta.json",
-      "bytes": 3245,
-      "sha256": "12080161cd7d28dd6e5e9d821e6134f99b71003b043150f5709ffc0b5a962276"
-    },
-    {
-      "file": "lsm_depth_00.tar.gz",
-      "bytes": 2665150,
-      "sha256": "640eb1172f2a16f898124b8cdde38e5551f28677dea58ba86e054913476439e5"
-    },
-    {
-      "file": "lsm_depth_01.tar.gz",
-      "bytes": 763214,
-      "sha256": "89f9e217bc7a2093ae2bb96871f8161ca5905a944ef68e34c831740b6c8469e3"
-    },
-    {
-      "file": "lsm_depth_02.tar.gz",
-      "bytes": 214284,
-      "sha256": "967321a8eb1eb34a75620ee7a55f143c51c1213cbf7b40e16a3cc4a9a369185b"
-    },
-    {
-      "file": "lsm_depth_03.tar.gz",
-      "bytes": 67935,
-      "sha256": "f6b07bb85f2b6e91698f6e7235de86ab22ed398c7341ac2f618fd90b9c46b44f"
-    },
-    {
-      "file": "lsm_feature_metadata.json",
-      "bytes": 21334,
-      "sha256": "fcae796db5d4a7c30090e99ee19ef0ae570c3e3c085832a7ff509a41b43f16c1"
-    },
-    {
-      "file": "lsm_hierarchy.json",
-      "bytes": 573,
-      "sha256": "abb159c2aad886bd3aaad926244804182be4d70a9759c602a01f3269ba74ae56"
-    },
-    {
-      "file": "stack_logistic.json",
-      "bytes": 509,
-      "sha256": "6722bbf509a5ff7f55aa2a22490446215fa9e9b9d7d451bcb2dbade15cd295dd"
-    }
+    {"path":"models/lightgbm_final.txt","type":"file","bytes":1733710,"sha256":"e77f37958f3f2d58c795d21b0c50c65fade9d85577443c425b1c4fcb3db0a78f"},
+    {"path":"models/lightgbm_final_meta.json","type":"file","bytes":3245,"sha256":"12080161cd7d28dd6e5e9d821e6134f99b71003b043150f5709ffc0b5a962276"},
+    {"path":"models/lsm_feature_metadata.json","type":"file","bytes":21334,"sha256":"fcae796db5d4a7c30090e99ee19ef0ae570c3e3c085832a7ff509a41b43f16c1"},
+    {"path":"models/lsm_hierarchy.json","type":"file","bytes":573,"sha256":"abb159c2aad886bd3aaad926244804182be4d70a9759c602a01f3269ba74ae56"},
+    {"path":"models/stack_logistic.json","type":"file","bytes":509,"sha256":"6722bbf509a5ff7f55aa2a22490446215fa9e9b9d7d451bcb2dbade15cd295dd"},
+    {"path":"models/lsm_depth_00/","type":"directory","files":124,"bytes":1832501,"sha256_tree":"204f23a24122476a2cec9bb7d97bb94297294981fe61f35826a8c606f15f77d5"},
+    {"path":"models/lsm_depth_01/","type":"directory","files":124,"bytes":538953,"sha256_tree":"8d0cceb2e9485f99fef0c40dfa207f16e85ad8201f8917664d4c609f1ffcf971"},
+    {"path":"models/lsm_depth_02/","type":"directory","files":124,"bytes":161376,"sha256_tree":"1159a88834a70d89bc5efd8ee96bb203a97b0c313e42d912e38cd99edc5e637f"},
+    {"path":"models/lsm_depth_03/","type":"directory","files":124,"bytes":58489,"sha256_tree":"6d0de9b8872f85c24adc095394d6a4bac00547afd6c91cac878bd45e5017d7bc"}
   ]
 }
